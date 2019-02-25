@@ -1,16 +1,27 @@
 
-## Introduction
+## Installation
+
+[Anaconda] is a free and open-source distribution of the Python
+and R programming languages for scientific computing (data science, machine
+learning applications, large-scale data processing, predictive analytics,
+etc.), that aims to simplify package management and deployment.
+
+[Git] is a distributed version-control system for tracking changes in source
+code during software development. It is designed for coordinating work among
+programmers, but it can be used to track changes in any set of files.
+
+<a href="https://en.wikipedia.org/"><img alt="– Wikipedia" align="right"/></a><br/>
 
 **Contents**
 * [Objectives](#objectives)
 * [Installation](#installation) ..................................................................................................................................................
   <img src="https://img.shields.io/badge/-Duration:_60mn-black.svg?style=flat-square" align="right"/>
 * [Python, IPython & Jupyter](#python-ipython--jupyter-) .........................................................................................................................
-  <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
+  <img src="https://img.shields.io/badge/-Duration:_15mn-black.svg?style=flat-square" align="right"/>
 * [Testing your installation](#testing-your-installation-) .............................................................................................................................
   <img src="https://img.shields.io/badge/-Duration:_15mn-black.svg?style=flat-square" align="right"/>
 * [First steps](#first-steps-) ...................................................................................................................................................
-  <img src="https://img.shields.io/badge/-Duration:_60mn-black.svg?style=flat-square" align="right"/>
+  <img src="https://img.shields.io/badge/-Duration:_90mn-black.svg?style=flat-square" align="right"/>
 
 
 <br/>
@@ -21,7 +32,7 @@ The primary goals of this lesson are:
 
 * To ensure you have a clean Python installation (including [Jupyter])
 * To install a decent text editor on your system
-* To be able to run a python script
+* To type a few Python lines and to run a python script
   
 ### Convention 
 
@@ -194,7 +205,7 @@ to do it in your preferred editor.
 
 
 <br/><br/>
-## Python, IPython & Jupyter <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
+## Python, IPython & Jupyter <img src="https://img.shields.io/badge/-Duration:_15mn-black.svg?style=flat-square" align="right"/>
 
 You are now ready to start using Python and there are several ways to do that:
 
@@ -203,7 +214,7 @@ You are now ready to start using Python and there are several ways to do that:
 3. You can start the Jupyter notebook and type some Python code in the browser  
    (and save your code and results in various formats such as PDF or HTML)
 
-The Python shell can be started using the command `Python`:
+The Python shell can be started using the command `python` or `python3`:
 
 <img src="https://img.shields.io/badge/-Shell-black.svg?style=flat-square" align="left"/>
 
@@ -225,7 +236,7 @@ Hello world!
 ```
 
 
-The IPython shell can be started using the command `IPython`:
+The IPython shell can be started using the command `ipython` or `ipython3`:
 
 <img src="https://img.shields.io/badge/-Shell-black.svg?style=flat-square" align="left"/>
 
@@ -263,17 +274,28 @@ Open your text editor and write:
 print("Hello world!")
 ```
 
-and save the file as `hello.py`. Take note on where you saved your file because
-you'll need to go to this place in the shell in order to be able to run it (you can also use the absolute path to execute it but it is less convenient.
+and save the file as `hello.py`. The `.py` is the regular file extension used
+for Python programs. You are free to use any exension you like, but using `.py`
+is a good idea since the operating system can identify the file as being a
+Python script. 
+
+Take note on where you saved your file because you'll need to go to this place
+in the shell in order to be able to run it (you can also use the absolute path
+to execute it but it is less convenient.
 
 <img src="https://img.shields.io/badge/-Shell-black.svg?style=flat-square" align="left"/>
 
 ``` Bash
-# You'll have to use the path to the path where yu saved your script
+# Replace the path with the path where you saved your script
 $ cd ~/GitHub/scipy-crash-course/examples 
 $ python hello.py
 Hello world!
 ```
+
+If you run the above command, Python will terminate as soon as your program
+has ended. If you want to stay within the Python interpreter, you'll have to use
+the `-i` switch (interactive mode) that tells Python to not exit once the program
+has finished.
 
 The IPython shell allows you to run a script through the magic
 command `%run` (there are many [other magic commands](https://ipython.org/ipython-doc/3/interactive/magics.html)).
@@ -292,7 +314,11 @@ and is used by an increasing number of researcher.
 
 ![https://blog.jupyter.org/we-analyzed-1-million-jupyter-notebooks-now-you-can-too-guest-post-8116a964b536](data/notebook.png)
 
-If you want to get started with Jupyter notebook, you better read the [tutorial](https://jupyter.readthedocs.io/en/latest/running.html) or this nice [tutorial](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook) at datacamp.
+If you want to get started with Jupyter notebook, you better read the
+[tutorial](https://jupyter.readthedocs.io/en/latest/running.html) at
+jupiter.org or this nice
+[tutorial](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook)
+at datacamp.
 
 
 
@@ -369,7 +395,7 @@ installation is not up to date and needs to be upgraded (go back the
 
 
 <br/><br/>
-## First steps <img src="https://img.shields.io/badge/-Duration:_60mn-black.svg?style=flat-square" align="right"/>
+## First steps <img src="https://img.shields.io/badge/-Duration:_90mn-black.svg?style=flat-square" align="right"/>
 
 Now it's time to experience a little bit with Python. Let's start with simple
 arithmetic operations because Python can be used as a regular calculator with
@@ -499,8 +525,6 @@ the actual value of the approximation, it would have to display:
 0.2999999999999999888977697537484345957636833190917968750000000000
 ```
 
-Not very convenient...
-
 Consequently, Python (as many other languages) chose to display a rounded value
 instead. If you want to know more, have a look at the [Floating Point
 Arithmetic: Issues and
@@ -515,7 +539,8 @@ Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html),
 David Goldberg, Computing Surveys, 1991.
 
 
-The right way to compare float numbers is thus:
+The right way to compare float numbers is thus to check if the difference is
+below a given threshold:
 
 <img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
@@ -562,9 +587,13 @@ False
 
 If you want to use more elaborate functions, you'll need the help of the
 [mathematical module](https://docs.python.org/3/library/math.html) for real
-numbers and the
-[complex mathematical module](https://docs.python.org/3/library/cmath.html) for
-complex numbers.
+numbers and the [complex mathematical
+module](https://docs.python.org/3/library/cmath.html) for complex numbers. To
+do that, we have to `import` a library and to use its name as a prefix, in
+front of the functions we want to use. For those who know Python, you might
+have been tempted to write `from math import *` but this is almost always a bad
+idea.
+
 
 **Power and logarithmic functions** 
 
@@ -640,9 +669,12 @@ all kind of objects.
 >>> not 24        # Negation
 ```
 
-Note that the `is` keyword really means identity, it is not a test for equality.
+Note that the `is` keyword really means identity (the two terms point to the
+same object), it is not a test for equality.
 
-``` python
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
 >>> 1 is 1.0
 False
 >>> True is 1
@@ -654,9 +686,11 @@ True
 ### Bitwise operations
 
 Bitwise operations are logical operations that operate a the bit level. They
-might be useful in some situations but we won't use them in this course.
+might be useful in some situations but we won't use them much in this course.
 
-``` python
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
 >>> 1 | 2   # bitwise or
 >>> 1 & 2   # bitwise and
 >>> 1 ^ 2   # bitwise xor
@@ -667,684 +701,57 @@ might be useful in some situations but we won't use them in this course.
 
 
 
+<br/><br/>
+## Exercises
 
-Python is much more
--------------------------------------------------------------------------------
+Before moving to the [next lesson](02-introduction.md), here are some simple
+exercises that should take you only a few minutes to solve. If you want the
+solution, just type these expression in a Python console.
 
-Beside being a convenient calculator, Python is also (and mostly) a powerful
-programming language with an elegant and intuitive syntax. Furthermore, you
-have to knwo that Python is an interpreted langage, meaning each time you enter
-a set of instructions, they need to be intepreted by the Python interpreter. This
-can make Python quite slow in some situation but we'll later how to overcome most
-of Python slowness.
 
-### Variables
+### Find the type of the following expressions
 
-Until now, we have been playing in the console, throwing some expressions in
-the interpreted and checked the result. Problem is that those expression cannot
-be re-used. It's thus time to save us some trouble and assign those expressions
-to variables. This can be done quite naturally.
-
-``` python
->>> width = 1
->>> height = 2
 ```
-
-What is really cool though is that you can assign several variables at once:
-
-``` python
->>> width, height = 2,1
->>> width
-1
->>> height
-2
-```
-
-However, you cannot refer a new variable on the same line
-
-``` python
->>> width, height = 2, 2*width
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'width' is not defined
-```
-
-In this case, you have to split the expression in two distinct lines.
-
-``` python
->>> width = 2
->>> height = 2*width
-```
-
-Variables can be manipulated just as any expression but they need to have been
-defined previously.
-
-``` python
->>> a = 2*b
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'b' is not defined
-```
-
-In interactive mode, that is, the console mode we've been using from the start,
-there is a special variable whose name is '_' and that contains the last
-**printed** expression.
-
-``` python
->>> very_long_name = 10
->>> very_long_name
-10
->>> b = 2 + _ # here, _ = very_long_name
->>> b
-12
-```
-
-Don't assign explicitely a value to the `_` variable or you'll kill the magic,
-and you don't want to do that, do you ?
-
-
-
-### Containers
-
-Beside the numeric types, Python also offers native container type (also known
-as collections), one is dedicated to the storing of ordered sequence of
-characters (i.e. strings) while some others allows to store just anything and
-offers different properties. In a nutshell:
-
-``` python
->>>  "1,2,3,4"  # String (ordered, character only, immutable, indexable)
->>>  (1,2,3,4)  # Tuple (ordered, immutable, indexable)
->>>  [1,2,3,4]  # List (ordered, mutable, indexable)
->>>  {1,2,3,4}  # Set (unordered, mutable, unique elements)
->>>  {1:2,3:4}  # Dictionnary (unordered, mutable, hashable)
-```
-
-**Strings**
-
-Strings are expressed by enclosing a text using pairs of " or \'
-characters. Depending on the character you chose, you can use the other inside
-the string.
-
-``` python
->>> "Hello 'world!'"
-"Hello 'world!'"
->>> 'Hello "world"!'
-'Hello "world!"'
->>> "" # empty string
-''
-```
-
-Note that you can split a string using spaces and Python will concatenate all
-the pieces together.
-
-``` python
->>> "Hello"  " "  "world!"
-'Hello world!'
-```
-
-
-But you can also explicitely concatenate the different pieces together.
-
-``` python
->>> "Hello" + " " + "world!"
-'Hello world!'
-```
-
-For multiline strings, you need to triple the enclosing quotes or to use parentheses.
-
-``` python
->>> """Hello 
-... world!"""
-'Hello\nworld!'
-
->>> '''Hello 
-... world!'''
-'Hello\nworld!'
-
->>>("Hello"
-... " world!")
-'Hello world!'
-```
-
-In the output above, you can seen the "\n" character has been added, it
-expresses the newline character. There are several backslashed characters:
-
-Escape Sequence | Meaning 
-----------------|---------------------------
-\\\\            | Backslash (\)
-\\\'            | Single quote (')
-\\\"            | Double quote (")
-\a              | ASCII Bell (BEL)
-\b              | ASCII Backspace (BS)
-\n              | ASCII Linefeed (LF)
-\r              | ASCII Carriage Return (CR)
-\t              | ASCII Horizontal Tab (TAB)
-\v              | ASCII Vertical Tab (TAB)
-
-This means the '\n' will be interpreted as a new line character, but what if we
-want to really have '\n' in our string as in 'C:\\some\\name'? Either we
-"escape" all the backslash or we prefix the string with `r` meaning special
-characters won't be interpeted.
-
-``` python
->>> print('C:\some\name')
-'C:\some
-ame'
->>> print('C:\\some\\name')
-C:\some\name
->>> print(r'C:\some\name')
-C:\some\name
-```
-
-Strings in Python 3 are encoded using UTF-8 ([Unicode]), meaning you can encode
-pretty much any glyphs fom any languages (and emojis as well).
-
-``` python
->>> "ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ" 
-'ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ'
-```
-
-**Tuples**
-
-Tuples are immutable containers, meaning they cannot be changed after they've
-been created. They allow to store pretty much anything, including other tuples.
-To create a tuple, you simply write a comma-separated list of values,
-optionally enclosed by parentheses.
-
-``` python
->>> 1,2,3
-(1, 2, 3)
->>> 1, "2", (1,2) 
-(1, '2', (1, 2))
->>> () # empty tuple
-()
-```
-
-**Lists**
-
-Lists are mutable containers quite similar to tuple, but they can be modified
-after creation. They also allow to store pretty much anything. To create a
-list, you need to write a comma-separated list of values enclosed by square
-brackets.
-
-``` python
->>> [1,2,3]
-[1, 2, 3]
-
->>> [1, "2", (1,2)]
-[1, '2', (1, 2)]
-
->>> [] # empty list
-[]
-```
-
-**Sets**
-
-Sets are mutable containers (they can be modified) and contains only unique
-elements, i.e. they prevent to have duplicated elements.
-
-``` python
->>> {1, 2, 2}
-{1, 2}
-
->>> {1, 2, "2"}
-{1, 2, '2'}
-```
-
-**Dictionnary**
-
-Dictionnary can be considered as a kind of associative memory where items are
-indexed by a key (instead of integer). The type of the key can be pretty much
-anything.
-
-``` python
->>> { "item 1" : 1, "item 2" : 2}
-{'item 2': 2, 'item 1': 1}
->>> { 1 : 2, 3 : 4}
-{1: 2, 3: 4}
-```
-
-
-### Indexing and slicing
-
-Individual items of a list, tuple and strings can be accessed invidually using
-their position as index. Note that first element has index 0
-
-``` python
->>> d = [1,2,3,4,5]
->>> d[0]
-1
-```
-
-This also work using negative indices, meaning the position has to be taken
-from the end. Note that last element has index -1.
-
-``` python
->>> s = "Hello world!"
->>> s[-1]
-'!'
-```
-
-Furthermore, we can also access a **range** of items using the slice notation
-`start:end`. Note that both start and end are optional.
-
-``` python
->>> d = [1,2,3,4,5]
->>> d[1:3]
-[2, 3]
-```
-
-If start is missing, Python will implicitly replace it by the start of the
-list. If end is missing, Python will implicitly replace it by the end of the
-list.
-
-
-``` python
->>> d = [1,2,3,4,5]
-
->>> d[1:]
-[2, 3, 4, 5]
-
->>> d[:2]
-[1, 2]
-
->>> d[:]
-[1, 2, 3, 4, 5]
-```
-
-We can further refine our slice by giving the step to between elements. The new
-syntax is thus `start:end:step`.
-
-``` python
->>> d = [1,2,3,4,5,6]
->>> d[0:5:2]
-[1, 3, 5]
-
-# Can be abbreviated into
->>> d[::2] # 
-[1, 3, 5]
-```
-
-What if we use a negative step? We get the reversed sequence.
-
-``` python
->>> d = [1,2,3,4,5,6]
->>> d[::-1] 
-[6, 5, 4, 3, 2, 1]
-```
-
-Because strings are indexable, indexing and slicing work just the same.
-
-
-``` python
->>> s = "Hello world!"
->>> s[6:-1]
-" world"
->>> s[6:]
-" world!"
-```
-
-
-### Adding and removing
-
-Adding an element to a mutable container can be done in two distinct
-ways. Either by creating a new container that is the container plus the new
-item, or by inserting the new item into the container, hence modyfying it.
-
-``` python
->>> l1 = [1, 2, 3]
->>> l2 = l1 + [4]
->>> l2
-[1, 2, 3, 4]
->>> l1.append(4)
->>> l1
-[1, 2, 3, 4]
-```
-
-For removing items, we need to use the **del** keyword and give indices where
-to delete items.
-
-``` python
->>> l1 = [1, 2, 3, 4, 5, 6]
->>> del l1[0 ]
->>> l1
-[2, 3, 4, 5, 6]
-```
-
-But we can also delete a range of indices at once.
-
-``` python
->>> l1 = [1, 2, 3, 4, 5, 6]
->>> del l1[::2]
->>> l1
-[2,4,6]
-```
-
-
-
-Running scripts
--------------------------------------------------------------------------------
-
-Until now, we have been mostly typing some Python expressions directly into
-the interpreter, meaning we had to type and retype the same expression again
-and again. To save us some time, it's time to put all these commands into a
-file that will be ran by the Python interpreter. First, chose a text editor you
-might like and fill it with some python commands.
-
-``` python
-print("Hello world!")
-```
-
-Then save it with the name `script.py`. The `.py` is the regular file extension
-used for Python programs. You are free to use any exension you like, but using
-`.py` is a damn good idea since the operating system can make the connection
-with Python based on this extension.
-
-To run this script, we have two options. First, we can start it using the
-regular python interpreter.
-
-``` bash
-$ python script.py
-Hello world!
-$
-```
-
-If you run the above command, Python will terminate as soon as your program
-has ended. If you want to stay within the Python interpreter, you'll have to use
-the `-i` switch (interactive mode) that tells Python to not exit once the program
-has finished.
-
-``` bash
-$ python script.py
-Hello world!
->>> 
-```
-
-Another option is to use [IPython] that allows to run a script from the within
-the interpreter.
-
-``` python
-[1]: %run script.py
-Hello world!
-[2]: 
-```
-
-### Indentation
-
-Something you will discover soon enough (or maybe you've already discovered it)
-is that Python is rather nitpicking about indentation.
-
-``` python
->>> a = 1
->>>  a = 1
-  File "<stdin>", line 1
-    a = 1
-    ^
-IndentationError: unexpected indent
-```
-
-The reason is that indentation has a semantic meaning but we'll see that later.
-
-
-
-The Jupyter notebook
--------------------------------------------------------------------------------
-
-The [Jupyter] notebook is a web application that allows you to create and share
-documents that contain live code, equations, visualizations and explanatory
-text. Uses include (but not limited to):
-
- * data cleaning and transformation
- * numerical simulation
- * statistical modeling
- * machine learning
-
-The Jupyter notebook is not restricted to python and support for over 40
-programming languages, including those popular in Data Science such as Python,
-R, Julia and Scala.
-
-You can try it [online](https://try.jupyter.org) but you can also start a new
-one locally:
-
-```shell
-$ jupyter notebook
-```
-
-This should open a new tab in your browser (or open a new browser if it was
-closed) showing your available notebooks. There should be none, so you can
-create a new one and start typing python code.
-
-We won't explore all that you can do with notebook during this course but you can
-have a look at the [nbviewer](http://nbviewer.jupyter.org) to see what can be
-done with them.
-
-
-
-Exercises
--------------------------------------------------------------------------------
-
-We'll stop here with this very short introduction to Python. It's now time to
-move on to programming with python. So now, shutdown your computer, grab a pen
-a sheet of paper and try to answer these exercices without typing them in a
-Python interpreter. Once you've answered every questiosn, you can chek them.
-
-###Find the type of the following expressions
-
-``` python
 .0
-```
-
-``` python
 -1
-```
-
-``` python
 1,
-```
-
-``` python
-'4.0 + 5.0'
-```
-
-``` python
+'float(4) + 5'
 1e2
-```
-
-``` python
 1j
+math.nan
 ```
 
-``` python
-[{()}]
+### Are these legal Python expressions?
+
 ```
-
-``` python
-float('nan')
-```
-
-
-### Are these legal python expressions?
-
-```python
 1 + 1 == 2
-```
-
-```python
 1 = 2
-```
-
-``` python
-(1,)[0] 
-```
-
-``` python
 1 + 1i
-```
-
-``` python
 1 <- 2
-```
-
-``` python
 0.+.0
-```
-
-``` python
 3***3
-```
-
-``` python
 3 <<2>> 3
 ```
-
-``` python
-[({})]
-```
-
 
 ### Find the result of the following expressions
 
 ```
-1.+1,
-1,+1.
+1.+.1
+0b1+0xb1
 (1,)*3
 1e1000 - 1e1000
 'abc'*3
 3 or 10
-3 <2> 3
-```
-<details><summary>
-Click to see solution
-</summary></p>
-
-```
-1.+1,            # (2.0,)
-1,+1.            # (1, 1.0)
-(1,)*3           # (1, 1, 1)
-1e1000 - 1e1000  # nan
-'abc'*3          # 'abcabcabc'
-3 or 10          # 3
-3 <2> 3          # False
+3 <2 > 3
 ```
 
 
-</details>
+<br/>
 
-### How to...
+---
 
-<details><summary>
-... build the empty set?
-</summary></p>
-
-```Python
-empty = {}    # Wrong: this builds an empty dictionnary
-empty = set() # Right
-```
-</p>
-</details>
-
-
-<details><summary>
-... get the list of unique letters composing "abracadabra"?
-</summary></p>
-
-```Python
-letters = set("abracadabra")
-```
-</p></details>
-
-
-<details><summary>
-... build a tuple of two empty lists?
-</summary></p>
-
-```Python
-a = ([], []) # Right but parenthesis are not necessary
-a = [], []   # Right
-```
-</p></details>
-
-
-<details><summary>
-... generate a list of all even numbers between 20 and 40 (included)?
-</summary></p>
-
-```Python
-numbers = list(range(20, 41, 2)
-```
-</p></details>
-
-<details><summary>
-... check if a word is a palindrom?
-</summary></p>
-
-```Python
-word = "kayak"
-print(word == word[::-1]) # Note that this does not work with "Kayak"
-
-word = "Kayak".lower()
-print(word == word[::-1]) # This works thanks to the lower method
-```
-</p></details>
-
-<details><summary>
-... transform the string "1.2" into a float?
-</summary></p>
-
-```Python
-a = float("1.2)
-```
-</p></details>
-
-<details><summary>
-... count the number of unique elements in a list?
-</summary></p>
-
-```Python
-mylist = [1,2,3,4,3,2,1]
-size = len(set(mylist))
-```
-</p></details>
-
-<details><summary>
-... print the string `"Isn't it, he said"` (including quotes)?
-</summary></p>
-
-```Python
-print('''"Isn't it, he said"''')
-```
-</p></details>
-
-<details><summary>
-... swap the content of two variables?
-</summary></p>
-
-```Python
-a,b = 1,2
-a,b = b,a
-```
-</p></details>
-
-
-
-
-Bibliography
--------------------------------------------------------------------------------
-
-Here are a set of resources for those who want to go further in their knowledge
-of Python.
-
-* [**The (official) Python tutorial**](https://docs.python.org/3/tutorial/index.html)
-  does not attempt to be comprehensive and cover every single feature, or even
-  every commonly used feature. Instead, it introduces many of Python's most
-  noteworthy features, and will give you a good idea of the language's flavor
-  and style.
-
-* [**Dive into python**](http://www.diveintopython3.net) is a teach-by-example
-  guide to the paradigms of programming in Python and modern software
-  development techniques. It assumes some preexisting knowledge of programming,
-  although not necessarily in Python.  
-  
+Copyright © 2019 [Nicolas P. Rougier](http://www.labri.fr/perso/nrougier) •
+Released under a [CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license.
 
 
 <!----------------------------- External links ------------------------------->
@@ -1364,12 +771,3 @@ of Python.
 [Notepad++]:    https://notepad-plus-plus.org/
 [Sublime Text]: https://www.sublimetext.com/
 <!---------------------------------------------------------------------------->
-
-
-<br/><br/><br/>
----
-
-Copyright © 2019 [Nicolas P. Rougier](http://www.labri.fr/perso/nrougier) •
-Released under a [CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license.
-
-
