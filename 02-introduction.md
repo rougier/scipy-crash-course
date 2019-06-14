@@ -34,6 +34,360 @@ The primary goals of this lesson are:
 
 
 <br/><br/>
+## First steps <img src="https://img.shields.io/badge/-Duration:_90mn-black.svg?style=flat-square" align="right"/>
+
+Now it's time to experience a little bit with Python. Let's start with simple
+arithmetic operations because Python can be used as a regular calculator with
+standard arithmetic operations (addition, subtraction, multiplication,
+division, etc.)
+
+#### Addition
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 2 + 3
+5
+```
+
+#### Subtraction
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 11 - 3
+8
+```
+
+#### Multiplication
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 3 * 4
+12
+```
+
+#### Division
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 11 / 5
+2.2
+```
+
+#### Integer division
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 11 // 5
+2
+```
+
+#### Modulo operation
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 11 % 5
+1
+```
+
+#### Power
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 2**3
+8
+```
+
+Note that you cannot have spaces between digits of a number:
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 1 0 + 2 
+  File "<stdin>", line 1
+    1 0 + 2
+      ^
+SyntaxError: invalid syntax
+```
+
+In such a case, Python complains about a syntax error and points at the
+position of the error in the expression (using the `^` character). Why Python
+points at the zero and not the space ? Because you could have written `1 + 2`
+and the space would have been legal. The interpreter can only find the error
+after it discovers the extra digit and consequently points at it when reporting
+the error.
+
+Of course, you can compose any number of operations in order to compute a more
+complex operation:
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 11 - (5 * (11//5)) #  = 11 % 5
+1
+```
+
+
+###  Native numeric types
+
+Python offers natively four main native numeric type, `bool`, `integer`,
+`float` and `complex`. But always keep in mind that they are the poor's man
+version of their mathematical equivalent (Boolean (𝔹), Integer (ℤ), Real (ℝ)
+and Complex (ℂ)): `ìnteger` have limited range, `float` and `complex` have
+limited range and precision.
+
+In the case of `float` and `complex`, this has very important consequences.
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+``` pycon
+>>> 0.1 + 0.1 + 0.1 == 0.3
+False
+```
+
+The reason is that decimal numbers `0.1` and `0.3` cannot be represented
+exactly and are only approximated. On most machines, if Python were to print
+the actual value of the approximation, it would have to display:
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> print("{0:.64f}".format(0.1))
+0.1000000000000000055511151231257827021181583404541015625000000000
+>>> print("{0:.64f}".format(0.3))
+0.2999999999999999888977697537484345957636833190917968750000000000
+```
+
+Consequently, Python (as many other languages) chose to display a rounded value
+instead. If you want to know more, have a look at the [Floating Point
+Arithmetic: Issues and
+Limitations](https://docs.python.org/3/tutorial/floatingpoint.html) chapter in
+the official [Python 3
+tutorial](https://docs.python.org/3/tutorial/index.html). An immediate and
+practical consequence is that what you see in the console is not always what
+you get in memory, even if they're reasonably close. If you want to know more
+about that, make sur to read [What Every Computer Scientist Should Know About
+Floating-Point
+Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html),
+David Goldberg, Computing Surveys, 1991.
+
+
+The right way to compare float numbers is thus to check if the difference is
+below a given threshold:
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+``` pycon
+>>> (0.1 + 0.1 + 0.1) - 0.3 < 1e-15
+True
+```
+
+
+For each type, there exist many ways to specify the same number.
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+``` pycon
+>>> True              # Boolean
+>>> 0b1010            # Integer (base  2: binary)
+>>> 0o12              # Integer (base  8: octal)
+>>> 10                # Integer (base 10: decimal)
+>>> 0x0a              # Integer (base 16: hexadecimal)
+>>> 10.0              # Float
+>>> 1e1               # Float (scientic notation)
+>>> float('inf')      # Float (infinity +∞)
+>>> float('nan')      # Float (Not A Number: nan)
+>>> 10 + 0j           # Complex
+```
+
+You can also force the type of a quantity by casting it into a different type:
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> bool(0)
+False
+>>> int(0)
+0
+>>> float(0)
+0.0
+>>> complex(0)
+0j
+```
+
+
+### Beyond simple arithmetic
+
+If you want to use more elaborate functions, you'll need the help of the
+[mathematical module](https://docs.python.org/3/library/math.html) for real
+numbers and the [complex mathematical
+module](https://docs.python.org/3/library/cmath.html) for complex numbers. To
+do that, we have to `import` a library and to use its name as a prefix, in
+front of the functions we want to use. For those who know Python, you might
+have been tempted to write `from math import *` but this is almost always a bad
+idea.
+
+
+**Power and logarithmic functions** 
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> import math
+>>> math.log( math.exp( 1.234 ) )
+1.234
+```
+
+**Trigonometric functions**
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> import math
+>>> math.asin( math.sin( 1.234 ) )
+1.234
+```
+
+**Hyperbolic functions**
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> import math
+>>> math.asinh( math.sinh( 1.234 ) )
+1.234
+```
+
+**Special functions**
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> import math
+>>> math.gamma( 2.0 )
+1.0
+```
+
+**Constants**
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> import math
+>>> math.pi
+3.141592653589793
+>>> math.e
+2.718281828459045
+>>> math.nan # Not A Number
+nan
+>>> math.inf # Infinite
+inf
+```
+
+
+### Logical operations
+
+Logic is an important part of Python because this allows to manipulate and
+compare quantities, including numbers, and we'll see later that it works for
+all kind of objects.
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> True and True # Logical and
+>>> 42 or 57      # Logical or
+>>> 1 == 2-1      # Equality test
+>>> 1 != 2        # Inequality test
+>>> 1 is 2-1      # Identity test
+>>> not 24        # Negation
+```
+
+Note that the `is` keyword really means identity (the two terms point to the
+same object), it is not a test for equality.
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 1 is 1.0
+False
+>>> True is 1
+False
+>>> True and 1
+True
+```
+
+### Bitwise operations
+
+Bitwise operations are logical operations that operate a the bit level. They
+might be useful in some situations but we won't use them much in this course.
+
+<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
+
+```pycon
+>>> 1 | 2   # bitwise or
+>>> 1 & 2   # bitwise and
+>>> 1 ^ 2   # bitwise xor
+>>> 8 << 2  # bitwise left shift
+>>> 8 >> 2  # bitwise right shift
+>>> ~8	  # bitwise negation
+```
+
+
+
+<br/><br/>
+## Exercises
+
+Before moving to the [next lesson](02-introduction.md), here are some simple
+exercises that should take you only a few minutes to solve. If you want the
+solution, just type these expression in a Python console.
+
+
+### Find the type of the following expressions
+
+```
+.0
+-1
+1,
+'float(4) + 5'
+1e2
+1j
+math.nan
+```
+
+### Are these legal Python expressions?
+
+```
+1 + 1 == 2
+1 = 2
+1 + 1i
+1 <- 2
+0.+.0
+3***3
+3 <<2>> 3
+```
+
+### Find the result of the following expressions
+
+```
+1.+.1
+0b1+0xb1
+(1,)*3
+1e1000 - 1e1000
+'abc'*3
+3 or 10
+3 <2 > 3
+```
+
+
+<br/>
+
+<br/><br/>
 
 ## Basic types <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 
