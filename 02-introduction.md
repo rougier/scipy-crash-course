@@ -13,6 +13,8 @@
 
 **Contents**
 * [Objectives](#objectives)
+* [First steps ](#first-steps-) <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
+
 * [Types & variables]() .................................................................................................................................. <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 * [Control flow]() ........................................................................................................................................... <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 * [Functions]() ............................................................................................................................................... <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
@@ -43,16 +45,12 @@ division, etc.)
 
 #### Addition
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ```pycon
 >>> 2 + 3
 5
 ```
 
 #### Subtraction
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ```pycon
 >>> 11 - 3
@@ -61,16 +59,12 @@ division, etc.)
 
 #### Multiplication
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ```pycon
 >>> 3 * 4
 12
 ```
 
 #### Division
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ```pycon
 >>> 11 / 5
@@ -79,16 +73,12 @@ division, etc.)
 
 #### Integer division
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ```pycon
 >>> 11 // 5
 2
 ```
 
 #### Modulo operation
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ```pycon
 >>> 11 % 5
@@ -97,16 +87,12 @@ division, etc.)
 
 #### Power
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ```pycon
 >>> 2**3
 8
 ```
 
 Note that you cannot have spaces between digits of a number:
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ```pycon
 >>> 1 0 + 2 
@@ -126,8 +112,6 @@ the error.
 Of course, you can compose any number of operations in order to compute a more
 complex operation:
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ```pycon
 >>> 11 - (5 * (11//5)) #  = 11 % 5
 1
@@ -144,8 +128,6 @@ limited range and precision.
 
 In the case of `float` and `complex`, this has very important consequences.
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ``` pycon
 >>> 0.1 + 0.1 + 0.1 == 0.3
 False
@@ -154,8 +136,6 @@ False
 The reason is that decimal numbers `0.1` and `0.3` cannot be represented
 exactly and are only approximated. On most machines, if Python were to print
 the actual value of the approximation, it would have to display:
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ```pycon
 >>> print("{0:.64f}".format(0.1))
@@ -181,8 +161,6 @@ David Goldberg, Computing Surveys, 1991.
 The right way to compare float numbers is thus to check if the difference is
 below a given threshold:
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ``` pycon
 >>> (0.1 + 0.1 + 0.1) - 0.3 < 1e-15
 True
@@ -190,8 +168,6 @@ True
 
 
 For each type, there exist many ways to specify the same number.
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ``` pycon
 >>> True              # Boolean
@@ -207,8 +183,6 @@ For each type, there exist many ways to specify the same number.
 ```
 
 You can also force the type of a quantity by casting it into a different type:
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ```pycon
 >>> bool(0)
@@ -236,8 +210,6 @@ idea.
 
 **Power and logarithmic functions** 
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ```pycon
 >>> import math
 >>> math.log( math.exp( 1.234 ) )
@@ -245,8 +217,6 @@ idea.
 ```
 
 **Trigonometric functions**
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ```pycon
 >>> import math
@@ -256,8 +226,6 @@ idea.
 
 **Hyperbolic functions**
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ```pycon
 >>> import math
 >>> math.asinh( math.sinh( 1.234 ) )
@@ -266,8 +234,6 @@ idea.
 
 **Special functions**
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ```pycon
 >>> import math
 >>> math.gamma( 2.0 )
@@ -275,8 +241,6 @@ idea.
 ```
 
 **Constants**
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ```pycon
 >>> import math
@@ -297,8 +261,6 @@ Logic is an important part of Python because this allows to manipulate and
 compare quantities, including numbers, and we'll see later that it works for
 all kind of objects.
 
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
-
 ```pycon
 >>> True and True # Logical and
 >>> 42 or 57      # Logical or
@@ -310,8 +272,6 @@ all kind of objects.
 
 Note that the `is` keyword really means identity (the two terms point to the
 same object), it is not a test for equality.
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ```pycon
 >>> 1 is 1.0
@@ -326,8 +286,6 @@ True
 
 Bitwise operations are logical operations that operate a the bit level. They
 might be useful in some situations but we won't use them much in this course.
-
-<img src="https://img.shields.io/badge/-Python-blue.svg?style=flat-square" align="left"/>
 
 ```pycon
 >>> 1 | 2   # bitwise or
