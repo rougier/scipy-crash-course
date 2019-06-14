@@ -13,18 +13,12 @@
 
 **Contents**
 * [Objectives](#objectives)
-* [Types & variables]() ....................................................................................................................................
-  <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
-* [Control flow]() .............................................................................................................................................
-  <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
-* [Functions]() .................................................................................................................................................
-  <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
-* [Modules]() ...................................................................................................................................................
-  <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
-* [Input / Output]() ..........................................................................................................................................
-  <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
-* [Exceptions]() ...............................................................................................................................................
-  <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
+* [Types & variables]() .................................................................................................................................. <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
+* [Control flow]() ........................................................................................................................................... <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
+* [Functions]() ............................................................................................................................................... <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
+* [Modules]() ................................................................................................................................................. <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
+* [Input / Output]() ........................................................................................................................................ <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
+* [Exceptions]() ............................................................................................................................................. <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 
 
 <br/><br/>
