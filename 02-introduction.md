@@ -1,19 +1,17 @@
 
 ## Introduction
 
-> Beautiful is better than ugly.  
-> Explicit is better than implicit.  
-> Simple is better than complex.  
-> Complex is better than complicated.  
-> Flat is better than nested.  
+We introduce here the Python language. Only the bare minimum necessary for
+getting started with Numpy and Scipy is addressed here. To learn more about
+the language, consider going through the excellent tutorial
+https://docs.python.org/tutorial. Dedicated books are also available, such as
+http://www.diveintopython.net/.  
 
-<a href="https://www.python.org/dev/peps/pep-0020/"><img alt="The Zen of Python (excerpt), Tim Peters (2004)" align="right"/><a/><br/>
-
-
+<br/>
 
 **Contents**
 * [Objectives](#objectives)
-* [First steps ](#first-steps-) ............................................................................................................................................. <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
+* [First steps ](#first-steps-) .............................................................................................................................................. <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 * [Types & variables]() .................................................................................................................................. <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 * [Control flow]() ........................................................................................................................................... <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 * [Functions]() ............................................................................................................................................... <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
@@ -22,7 +20,7 @@
 * [Exceptions]() ............................................................................................................................................. <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 
 
-<br/><br/>
+<br/><br/><br/><br/>
 
 ## Objectives
 
