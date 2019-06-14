@@ -8,8 +8,10 @@ Python that has been split in 5 beginner and 3 advanced modules. Contributions
 and feedbacks are welcome. Released under a [CC-BY 4.0
 International](https://creativecommons.org/licenses/by/4.0/legalcode) license.  
 
-If you want me to teach this course (one week) at your company,
-anywhere in the world, please contact me.  
+If you want me to teach this course at your company,
+(anywhere in the world), please contact me.  
+If you want to support my work, you can also [pay me a coffee](https://www.paypal.me/NicolasPRougier/5).  
+
 
 <a href="http://www.labri.fr/perso/nrougier"><img alt="Nicolas P. Rougier" align="right"/></a><br/><br/><br/>
 
@@ -46,7 +48,7 @@ http://www.diveintopython.net/.
 <br/><br/>
 
 
-### [Numerical computing]() <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
+### [Numerical computing](03-numerical.md) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
 
 <img src="data/indent.png" align="left"/>
 
@@ -60,7 +62,7 @@ functions to operate on these arrays.
 <br/><br/>
 
 
-### [Data visualization]() <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
+### [Data visualization](04-visualization.md) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
 
 <img src="data/indent.png" align="left"/>
 
@@ -74,7 +76,7 @@ different formats. We'll cover only most common use cases.
 <br/><br/>
 
 
-### [Version Control]()  <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
+### [Version Control](05-version-control.md)  <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
 
 <img src="data/indent.png" align="left"/>
 
@@ -117,7 +119,7 @@ some cases.
 **Prerequisites**: [Numerical Computing]()
 <br/><br/>
 
-### [Code acceleration]() <img src="https://img.shields.io/badge/3H-Advanced-EF5350.svg?style=flat-square" align="right"/>
+### [Code acceleration](08-acceleration.md) <img src="https://img.shields.io/badge/3H-Advanced-EF5350.svg?style=flat-square" align="right"/>
 
 <img src="data/indent.png" align="left"/>
 
@@ -133,14 +135,14 @@ time) using the industry-standard LLVM compiler library.
 
 ## Bibliography
 
-* [Machine Learning Recipes](), N.P. Rougier, Github, 2019.
-* [How to transform code into scientific contribution](), N.P. Rougier & F.Benureau, Frontiers in Neuroinformatics, 2018.
-* [Python+OpenGL for Scientific Visualization](), N.P. Rougier, Zenodo, 2018.
-* [Digital typography](), N.P. Rougier & B. Esfahbod, SIGGRAPH, 2018.
-* [From Python to NumPy](), N.P. Rougier, Zenodo, 2017.
-* [100 Numpy exercises](), N.P. Rougier, GitHub, 2017.
-* [Matplotlib tutorial](), N.P. Rougier, Zenodo, 2015.
-* [Ten simple rules for better figures](),
+* [Machine Learning Recipes](https://github.com/rougier/ML-Recipes), N.P. Rougier, Github, 2019.
+* [How to transform code into scientific contribution](https://www.frontiersin.org/articles/10.3389/fninf.2017.00069/full), N.P. Rougier & F.Benureau, Frontiers in Neuroinformatics, 2018.
+* [Python+OpenGL for Scientific Visualization](http://www.labri.fr/perso/nrougier/python-opengl/), N.P. Rougier, Zenodo, 2018.
+* [Digital typography](https://www.slideshare.net/NicolasRougier1/siggraph-2018-digital-typography), N.P. Rougier & B. Esfahbod, SIGGRAPH, 2018.
+* [From Python to NumPy](http://www.labri.fr/perso/nrougier/from-python-to-numpy/), N.P. Rougier, Zenodo, 2017.
+* [100 Numpy exercises](https://github.com/rougier/numpy-100), N.P. Rougier, GitHub, 2017.
+* [Matplotlib tutorial](http://www.labri.fr/perso/nrougier/teaching/matplotlib/), N.P. Rougier, Zenodo, 2015.
+* [Ten simple rules for better figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833),
   N.P. Rougier, M. Droettboom & P. E. Bourne, Plos Computational Biology, 2014.
 <br/>
 
