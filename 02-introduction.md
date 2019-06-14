@@ -14,7 +14,6 @@
 **Contents**
 * [Objectives](#objectives)
 * [First steps ](#first-steps-) <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
-
 * [Types & variables]() .................................................................................................................................. <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 * [Control flow]() ........................................................................................................................................... <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 * [Functions]() ............................................................................................................................................... <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
