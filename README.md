@@ -14,7 +14,7 @@ International](https://creativecommons.org/licenses/by/4.0/legalcode) license.
 
 ## Material
 
-### [1. Installation](01-installation.md) <img src="https://img.shields.io/badge/1H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
+### [1. Installation](lessons/01-installation.md) <img src="https://img.shields.io/badge/1H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
 
 <img src="data/indent.png" width="10pt" height="180pt" align="left"/>
 
@@ -32,7 +32,7 @@ script from the command line or from inside the [IPython] shell.
 <br/>
 
 <!-- ----------------------------------------------------------------------- -->
-### [2. Introduction](introduction.md) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
+### [2. Introduction](lessons/introduction.md) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
 
 <img src="data/indent.png" width="10pt" height="160pt" align="left"/>
 
