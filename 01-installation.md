@@ -14,7 +14,7 @@ script from the command line or from inside the [IPython] shell.
 **Contents**
 * [Objectives](#objectives)
 * [Installation](#installation) ..............................................................................................................................................
-  <img src="https://img.shields.io/badge/-Duration:_60mn-black.svg?style=flat-square" align="right"/>
+  <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 * [Python, IPython & Jupyter](#python-ipython--jupyter-) ....................................................................................................................
   <img src="https://img.shields.io/badge/-Duration:_15mn-black.svg?style=flat-square" align="right"/>
 * [Testing your installation](#testing-your-installation-) .........................................................................................................................
@@ -78,7 +78,7 @@ type `Control-D`.
 
 
 <br/><br/>
-## Installation <img src="https://img.shields.io/badge/-Duration:_60mn-black.svg?style=flat-square" align="right"/>
+## Installation <img src="https://img.shields.io/badge/-Duration:_30mn-black.svg?style=flat-square" align="right"/>
 
 As of today (2019), Python exists mainly in two flavors: Python 2.x
 (deprecated) and Python 3.x. On some systems, the 2.x version is already

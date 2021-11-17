@@ -290,7 +290,7 @@ might be useful in some situations but we won't use them much in this course.
 >>> 1 ^ 2   # bitwise xor
 >>> 8 << 2  # bitwise left shift
 >>> 8 >> 2  # bitwise right shift
->>> ~8	  # bitwise negation
+>>> ~8	    # bitwise negation
 ```
 
 
@@ -351,7 +351,7 @@ math.nan
 
 Beside being a convenient calculator, Python is also (and mostly) a powerful
 programming language with an elegant and intuitive syntax. Furthermore, you
-have to knwo that Python is an interpreted langage, meaning each time you enter
+have to know that Python is an interpreted langage, meaning each time you enter
 a set of instructions, they need to be intepreted by the Python interpreter. This
 can make Python quite slow in some situation but we'll later how to overcome most
 of Python slowness.
@@ -541,7 +541,7 @@ optionally enclosed by parentheses.
 **Lists**
 
 Lists are mutable containers quite similar to tuple, but they can be modified
-after creation. They also allow to store pretty much anything. To create a
+after creation. They allow to store pretty much anything. To create a
 list, you need to write a comma-separated list of values enclosed by square
 brackets.
 
@@ -630,7 +630,7 @@ list.
 [1, 2, 3, 4, 5]
 ```
 
-We can further refine our slice by giving the step to between elements. The new
+We can further refine our slice by giving the step between elements. The new
 syntax is thus `start:end:step`.
 
 ``` python

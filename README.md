@@ -3,24 +3,20 @@
 
 ![](data/XKCD.png)
 
-This is the material for a self-contained 24 hours crash course on Scientific
-Python that has been split in 5 beginner and 3 advanced modules. Contributions
-and feedbacks are welcome. Released under a [CC-BY 4.0
+This is the material for a 20 hours crash course on Scientific Python
+that has been split in 5 beginner and 3 advanced
+modules. Contributions and feedbacks are welcome. Released under a
+[CC-BY 4.0
 International](https://creativecommons.org/licenses/by/4.0/legalcode) license.  
-
-If you want me to teach this course at your company,
-(anywhere in the world), please contact me.  
-If you want to support my work, you can also [pay me a coffee](https://www.paypal.me/NicolasPRougier/5).  
-
 
 <a href="http://www.labri.fr/perso/nrougier"><img alt="Nicolas P. Rougier" align="right"/></a><br/><br/><br/>
 
 
 ## Material
 
-### [Installation](01-installation.md) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
+### [1. Installation](01-installation.md) <img src="https://img.shields.io/badge/1H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
 
-<img src="data/indent.png" align="left"/>
+<img src="data/indent.png" width="10pt" height="180pt" align="left"/>
 
 This lesson aims at providing the student with a clean development environment,
 including Python installation and essential packages (using the [Anaconda]
@@ -30,12 +26,15 @@ shells, the [Jupyter] notebook and explains how to run a python
 script from the command line or from inside the [IPython] shell.  
 
 **Keywords**: `anaconda`, `shell`, `notebook`, `script`, `git`, `editor`  
-**Prerequisites**: None <br/><br/>
+**Prerequisites**: None  
+**Resources**: None 
 
+<br/>
 
-### [Introduction](02-introduction.md) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
+<!-- ----------------------------------------------------------------------- -->
+### [2. Introduction](introduction.md) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
 
-<img src="data/indent.png" align="left"/>
+<img src="data/indent.png" width="10pt" height="160pt" align="left"/>
 
 We introduce here the Python language. Only the bare minimum necessary for
 getting started with Numpy and Scipy is addressed here. To learn more about
@@ -44,13 +43,15 @@ https://docs.python.org/tutorial. Dedicated books are also available, such as
 http://www.diveintopython.net/.  
 
 **Keywords**: `python`, `types`, `control flow`, `function`, `package`  
-**Prerequisites**: [Installation]()
-<br/><br/>
+**Prerequisites**: Installation  
+**Resources**: [The Python tutorial](https://docs.python.org/3/tutorial/)
 
+<br/>
 
-### [Numerical computing](03-numerical.md) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
+<!-- ----------------------------------------------------------------------- -->
+### [3. Numerical computing (numpy)](https://scipy-lectures.org/intro/numpy/index.html) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
 
-<img src="data/indent.png" align="left"/>
+<img src="data/indent.png" width="10pt" height="140pt" align="left"/>
 
 This lesson gives an overview of [NumPy], the core library for performant
 numerical computing, with support for large, multi-dimensional
@@ -58,13 +59,15 @@ arrays and matrices, along with a large collection of high-level mathematical
 functions to operate on these arrays.
 
 **Keywords**: `numpy`, `array`, `dtype`, `shape`, `broadcast`  
-**Prerequisites**: [Python programming]()
-<br/><br/>
+**Prerequisites**: Introduction  
+**Resources**: [SciPy Lecture Notes](https://scipy-lectures.org/)
 
+<br/>
 
-### [Data visualization](04-visualization.md) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
+<!-- ----------------------------------------------------------------------- -->
+### [4. Data visualization (matplotlib)](https://github.com/rougier/matplotlib-tutorial) <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
 
-<img src="data/indent.png" align="left"/>
+<img src="data/indent.png" width="10pt" height="160pt" align="left"/>
 
 In this lesson, we are going to explore [Matplotlib] that is the single most
 used Python package for 2D-graphics. It provides both a very quick way to
@@ -72,13 +75,31 @@ visualize data from Python and to produce publication-quality figures in many
 different formats. We'll cover only most common use cases.
 
 **Keywords**: `matplotlib`, `figure`, `plot`, `data`  
-**Prerequisites**: [Python programming](), [Numerical computing]()
-<br/><br/>
+**Prerequisites**: Introduction, Numerical computing  
+**Resources**: [Scientific Visulization: Python + Matplotlib](https://www.labri.fr/perso/nrougier/scientific-visualization.html)
 
+<br/>
 
-### [Version Control](05-version-control.md)  <img src="https://img.shields.io/badge/3H-Beginner-B39DDB.svg?style=flat-square" align="right"/>
+<!-- ----------------------------------------------------------------------- -->
+### [5. Scientific computing (scipy)]() <img src="https://img.shields.io/badge/3H-Advanced-EF5350.svg?style=flat-square" align="right"/>
 
-<img src="data/indent.png" align="left"/>
+<img src="data/indent.png" width="10pt" height="140pt" align="left"/>
+
+We'll explore the [SciPy] library that contains a large number of independent
+modules for optimization, linear algebra, integration, interpolation, special
+functions, FFT, signal and image processing, ODE solvers and other tasks common
+in science and engineering.
+
+**Keywords**: `linear algebra`, `signal processing`, `analysis`, `integration`, `solvers`  
+**Prerequisites**: Numerical Computing  
+**Resources**: [SciPy Lecture Notes](https://scipy-lectures.org/)
+
+<br/>
+
+<!-- ----------------------------------------------------------------------- -->
+### [6. Version Control (git)](https://swcarpentry.github.io/git-novice/)  <img src="https://img.shields.io/badge/3H-Advanced-EF5350.svg?style=flat-square" align="right"/>
+
+<img src="data/indent.png" width="10pt" height="180pt" align="left"/>
 
 Version control is the lab notebook of the digital world: it’s what
 professionals use to keep track of what they’ve done and to collaborate with
@@ -88,40 +109,31 @@ software: books, papers, small data sets, and anything that changes over time
 or needs to be shared can and should be stored in a version control system.
 
 **Keywords**: `git`, `github`, `clone`, `commit`, `push`, `fork`  
-**Prerequisites**: [Installation]()
-<br/><br/>
+**Prerequisites**: Installation  
+**Resources**: [Software Carpentry](https://software-carpentry.org/)
+
+<br/>
 
 
-### [Scientific computing]() <img src="https://img.shields.io/badge/3H-Advanced-EF5350.svg?style=flat-square" align="right"/>
+<!-- ----------------------------------------------------------------------- -->
+### [7. Vectorization techniques (numpy)](https://www.labri.fr/perso/nrougier/from-python-to-numpy) <img src="https://img.shields.io/badge/3H-Advanced-EF5350.svg?style=flat-square" align="right"/>
 
-<img src="data/indent.png" align="left"/>
-
-We'll explore the [SciPy] library that contains a large number of independent
-modules for optimization, linear algebra, integration, interpolation, special
-functions, FFT, signal and image processing, ODE solvers and other tasks common
-in science and engineering.
-
-
-**Keywords**: `linear algebra`, `signal processing`, `analysis`, `integration`, `solvers`  
-**Prerequisites**: [Numerical Computing]()
-<br/><br/>
-
-
-### [Vectorization techniques]() <img src="https://img.shields.io/badge/3H-Advanced-EF5350.svg?style=flat-square" align="right"/>
-
-<img src="data/indent.png" align="left"/>
+<img src="data/indent.png" width="10pt" height="140pt" align="left"/>
 
 The goal of this lesson is to explain some vectorization techniques that
 can drastically improve computation, with several orders of magnitude in
 some cases.
 
 **Keywords**: `Code`, `Problem`, `Spatial`, `Temporal`  
-**Prerequisites**: [Numerical Computing]()
-<br/><br/>
+**Prerequisites**: Numerical Computing  
+**Resources**: [From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy)
 
-### [Code acceleration](08-acceleration.md) <img src="https://img.shields.io/badge/3H-Advanced-EF5350.svg?style=flat-square" align="right"/>
+<br/>
 
-<img src="data/indent.png" align="left"/>
+<!-- ----------------------------------------------------------------------- -->
+### [8. Interface with C (cython and ctypes)](https://scipy-lectures.org/advanced/interfacing_with_c/interfacing_with_c.html) <img src="https://img.shields.io/badge/3H-Advanced-EF5350.svg?style=flat-square" align="right"/>
+
+<img src="data/indent.png" width="10pt" height="140pt" align="left"/>
 
 [Cython] is a static compiler for both the Python programming language and the
 extended Cython programming language that eases the writing of C extensions.
@@ -129,31 +141,28 @@ extended Cython programming language that eases the writing of C extensions.
 time) using the industry-standard LLVM compiler library.
 
 **Keywords**: `Optimization`, `Cython`, `Numba`, `Compiler`, `JIT`  
-**Prerequisites**: [Numerical Computing]()
-<br/><br/><br/>
+**Prerequisites**: Numerical Computing , Vectorization techniques  
+**Resources**: [SciPy Lecture Notes](https://scipy-lectures.org/)
 
-
-## Bibliography
-
-* [Machine Learning Recipes](https://github.com/rougier/ML-Recipes), N.P. Rougier, Github, 2019.
-* [How to transform code into scientific contribution](https://www.frontiersin.org/articles/10.3389/fninf.2017.00069/full), N.P. Rougier & F.Benureau, Frontiers in Neuroinformatics, 2018.
-* [Python+OpenGL for Scientific Visualization](http://www.labri.fr/perso/nrougier/python-opengl/), N.P. Rougier, Zenodo, 2018.
-* [Digital typography](https://www.slideshare.net/NicolasRougier1/siggraph-2018-digital-typography), N.P. Rougier & B. Esfahbod, SIGGRAPH, 2018.
-* [From Python to NumPy](http://www.labri.fr/perso/nrougier/from-python-to-numpy/), N.P. Rougier, Zenodo, 2017.
-* [100 Numpy exercises](https://github.com/rougier/numpy-100), N.P. Rougier, GitHub, 2017.
-* [Matplotlib tutorial](http://www.labri.fr/perso/nrougier/teaching/matplotlib/), N.P. Rougier, Zenodo, 2015.
-* [Ten simple rules for better figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833),
-  N.P. Rougier, M. Droettboom & P. E. Bourne, Plos Computational Biology, 2014.
 <br/>
 
-## Copyright notice
 
-This course has been written in March 2019 using  
-<img src="https://img.shields.io/badge/OSX-10.14.3-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Emacs-26.1-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Git-2.20.1-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Python-3.7.2-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Numpy-1.15.2-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Scipy-1.1.0-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Matplotlib-3.0.0-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Cython-0.28.2-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Numba-0.40.0-999999.svg?style=flat-square"/>
+### Bibliography
+* [SciPy 1.0: fundamental algorithms for scientific computing in Python](https://www.nature.com/articles/s41592-019-0686-2),
+P.Virtanen, R.Gommers & al., Nature Methods, 2020.
+* [Array programming with NumPy](https://www.nature.com/articles/s41586-020-2649-2), C.R. Harris, K.J. Millman & al., Nature, 2020.
+* [How to transform code into scientific contribution](https://www.frontiersin.org/articles/10.3389/fninf.2017.00069/full), N.P. Rougier & F.Benureau, Frontiers in Neuroinformatics, 2018.
+* [Ten simple rules for better figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833),
+  N.P. Rougier, M. Droettboom & P. E. Bourne, Plos Computational Biology, 2014.
 
-Copyright © 2019 [Nicolas P. Rougier](http://www.labri.fr/perso/nrougier)   
+### Copyright notice
+
+Copyright © 2021 [Nicolas P. Rougier](http://www.labri.fr/perso/nrougier) —
 Released under a [CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license.  
-Banner image copyright © Randall Monroe ([XKCD #353](https://xkcd.com/353/))  
+Banner image copyright © Randall Monroe ([XKCD #353](https://xkcd.com/353/)) — 
+This course has been written in November 2021 using:  
+<img src="https://img.shields.io/badge/OSX-12.0.1-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Emacs-27.2-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Git-2.30.1-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Python-3.8.10-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Numpy-1.20.3-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Scipy-1.7.1-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Matplotlib-3.3.4-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Cython-0.29.24-999999.svg?style=flat-square"/> <img src="https://img.shields.io/badge/Numba-0.53.1-999999.svg?style=flat-square"/>
+
 
 
 
