@@ -99,7 +99,7 @@ in science and engineering.
 <!-- ----------------------------------------------------------------------- -->
 ### [6. Version Control (git)](https://swcarpentry.github.io/git-novice/)  <img src="https://img.shields.io/badge/3H-Advanced-EF5350.svg?style=flat-square" align="right"/>
 
-<img src="data/indent.png" width="10pt" height="180pt" align="left"/>
+<img src="data/indent.png" width="10pt" height="200pt" align="left"/>
 
 Version control is the lab notebook of the digital world: it’s what
 professionals use to keep track of what they’ve done and to collaborate with
@@ -148,12 +148,14 @@ time) using the industry-standard LLVM compiler library.
 
 
 ### Bibliography
-* [SciPy 1.0: fundamental algorithms for scientific computing in Python](https://www.nature.com/articles/s41592-019-0686-2),
+* [SciPy 1.0: fundamental algorithms for scientific computing in Python](https://www.nature.com/articles/s41592-019-0686-2),  
 P.Virtanen, R.Gommers & al., Nature Methods, 2020.
-* [Array programming with NumPy](https://www.nature.com/articles/s41586-020-2649-2), C.R. Harris, K.J. Millman & al., Nature, 2020.
-* [How to transform code into scientific contribution](https://www.frontiersin.org/articles/10.3389/fninf.2017.00069/full), N.P. Rougier & F.Benureau, Frontiers in Neuroinformatics, 2018.
-* [Ten simple rules for better figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833),
-  N.P. Rougier, M. Droettboom & P. E. Bourne, Plos Computational Biology, 2014.
+* [Array programming with NumPy](https://www.nature.com/articles/s41586-020-2649-2),   
+C.R. Harris, K.J. Millman & al., Nature, 2020.
+* [How to transform code into scientific contribution](https://www.frontiersin.org/articles/10.3389/fninf.2017.00069/full),  
+N.P. Rougier & F.Benureau, Frontiers in Neuroinformatics, 2018.
+* [Ten simple rules for better figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833),  
+N.P. Rougier, M. Droettboom & P. E. Bourne, Plos Computational Biology, 2014.
 
 ### Copyright notice
 
